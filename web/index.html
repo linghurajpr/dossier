@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dossier — revue de dossier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div>
+        <p class="eyebrow">DOSSIER · ASSISTANCE ADMINISTRATIVE</p>
+        <h1>Revue de dossier</h1>
+      </div>
+      <span class="banner">Synthetic data only. Nothing is submitted.</span>
+    </header>
+    <section class="panel controls" aria-labelledby="run-title">
+      <div><p class="eyebrow">ESPACE DE TRAVAIL</p><h2 id="run-title">Choisir un dossier de démonstration</h2></div>
+      <div class="run-row"><label for="demo-case">Dossier</label><select id="demo-case"></select><button id="run-case" class="primary" disabled>Run</button></div>
+    </section>
+    <section class="panel" aria-labelledby="progress-title">
+      <div class="section-head"><div><p class="eyebrow">TRAITEMENT</p><h2 id="progress-title">Progression</h2></div><span id="case-state" class="state-pill">Aucun dossier actif</span></div>
+      <ol id="progress" class="steps" aria-live="polite"></ol>
+    </section>
+    <section class="panel" aria-labelledby="findings-title">
+      <p class="eyebrow">VÉRIFICATION</p><h2 id="findings-title">Constats</h2><div id="findings"></div>
+    </section>
+    <section id="approval" class="panel hidden" aria-labelledby="approval-title">
+      <p class="eyebrow">DÉCISION HUMAINE</p><h2 id="approval-title">Approbation requise</h2>
+      <label class="check"><input id="reviewed" type="checkbox"> I reviewed the findings</label>
+      <div class="button-row"><button id="approve" class="primary" disabled>Approve and generate drafts</button><button id="reject" class="secondary">Reject</button></div>
+    </section>
+    <section class="panel" aria-labelledby="result-title">
+      <p class="eyebrow">SORTIES</p><h2 id="result-title">Brouillons d'action</h2><div id="results"><p class="muted">Aucun brouillon pour le moment.</p></div>
+    </section>
+    <section class="panel" aria-labelledby="audit-title">
+      <div class="section-head"><div><p class="eyebrow">TRAÇABILITÉ</p><h2 id="audit-title">Journal d'audit</h2></div><p id="audit-summary" class="mono muted">Runs used 0 of 0, cache hits 0</p></div>
+      <div class="table-wrap"><table><thead><tr><th>Heure</th><th>Événement</th><th>Dossier</th><th>Détails</th></tr></thead><tbody id="audit-body"></tbody></table></div>
+    </section>
+    <section class="panel" aria-labelledby="eval-title">
+      <p class="eyebrow">ÉVALUATION</p><h2 id="eval-title">Évaluation hors ligne</h2>
+      <p id="eval-disclaimer" class="muted">Measured on N synthetic cases, indicative only</p><div id="eval-content"></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
