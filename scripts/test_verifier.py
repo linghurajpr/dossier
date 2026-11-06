@@ -11,6 +11,7 @@ async def main(case_id: str) -> None:
     async with AsyncCominty() as client:
         text, secs = await call(client, os.environ["AGENT_ID_VERIFIER"], json.dumps(facts, ensure_ascii=False))
     findings = parse("verifier", text)
+    (ROOT / f"data/test_runs/{case_id}_findings.json").write_text(json.dumps(findings, indent=2, ensure_ascii=False))
     print(f"Verifier replied in {secs:.1f}s")
     for item in findings.get("findings", []):
         print(f"  [{item['severity']}] {item['rule']}: {item['message']}")

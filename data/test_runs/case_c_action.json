@@ -1,0 +1,29 @@
+{
+  "form": {
+    "nom": "Martin",
+    "prenom": "Éloïse",
+    "date_naissance": "2004-03-08",
+    "adresse_logement": "12 rue des Lilas 75011 Paris",
+    "loyer_mensuel": "850.00",
+    "charges": "75.00",
+    "debut_bail": "2026-09-12",
+    "fin_bail": "2027-09-11",
+    "etablissement": "Université des Rives (fictive)",
+    "iban": "FR5400000543210098765432100"
+  },
+  "email": {
+    "to_role": "student",
+    "subject": "Confirmation de la complétude de votre dossier CAF",
+    "body_fr": "Bonjour Éloïse Martin,\n\nNous avons bien examiné les documents que vous nous avez transmis dans le cadre de votre demande d'aide au logement auprès de la CAF. Nous vous confirmons que votre dossier est complet : le bail, le relevé d'identité bancaire, le justificatif d'inscription et le titre de séjour ne présentent aucune anomalie.\n\nLes prochaines étapes sont les suivantes :\n1. Vérifiez que les informations pré-remplies dans le formulaire de demande (identité, adresse du logement, montant du loyer et des charges, dates du bail et coordonnées bancaires) correspondent bien à votre situation.\n2. Signalez-nous sans délai toute erreur éventuelle.\n3. Nous vous informerons dès que la demande sera finalisée et transmise à la CAF.\n\nDans l'attente, nous vous prions d'agréer, Madame, Monsieur, l'expression de nos salutations distinguées.\n\nLe service des relations internationales"
+  },
+  "notes_for_staff": [
+    "Draft only: no submission has been made; the CAF submission is mocked.",
+    "No validation errors or missing documents were reported in Findings; the file is marked ready.",
+    "Verify the lease start date (2026-09-12) and end date (2027-09-11) against the signed lease.",
+    "Verify the IBAN and BIC against the original RIB; the account holder name is in uppercase on the RIB.",
+    "Date of birth confidence is 0.9 (lowest field confidence); double-check against the enrollment record.",
+    "Permit type is 'Attestation fictive de résidence' with confidence 0.9; confirm the document type is acceptable for the CAF file.",
+    "Enrollment field 'Université des Rives (fictive)' contains the word 'fictive'; confirm the institution name as it should appear on the form.",
+    "Email greeting uses the student's full name per workspace convention; the closing salutation uses 'Madame, Monsieur' generically and may be adjusted by staff."
+  ]
+}

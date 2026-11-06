@@ -1,0 +1,26 @@
+{
+  "form": {
+    "nom": "Durand",
+    "prenom": "Camille",
+    "date_naissance": "2004-03-08",
+    "adresse_logement": "12 rue des Lilas 75011 Paris",
+    "loyer_mensuel": "850.00",
+    "charges": "75.00",
+    "debut_bail": "2026-09-12",
+    "fin_bail": "2027-09-11",
+    "etablissement": "Université des Rives (fictive)",
+    "iban": "FR0600000123450678901234500"
+  },
+  "email": {
+    "to_role": "student",
+    "subject": "Dossier CAF - vérification de l'adresse sur votre RIB",
+    "body_fr": "Bonjour Camille Durand,\n\nNous avons bien reçu les documents de votre dossier. Avant de pouvoir finaliser votre demande, nous avons besoin d'une vérification.\n\nL'adresse indiquée sur votre RIB (48 avenue Jean Jaurès, 69007 Lyon) ne correspond pas à l'adresse de votre logement figurant sur le bail (12 rue des Lilas, 75011 Paris).\n\nPourriez-vous nous indiquer si l'adresse de votre RIB est à jour ou si votre domicile diffère de l'adresse du logement loué ? Si votre adresse bancaire a changé, merci de nous transmettre un RIB récent ou une attestation de votre banque mentionnant votre adresse actuelle. Si le bail correspond bien à votre résidence, un justificatif de domicile à l'adresse du logement peut également nous aider.\n\nDès réception de ces éléments, nous procéderons à la vérification de votre dossier.\n\nCordialement,\n\nLe service des relations internationales"
+  },
+  "notes_for_staff": [
+    "File is NOT ready: finding F1 (ADDRESS_MISMATCH, severity error) between lease property address (12 rue des Lilas, 75011 Paris) and RIB holder address (48 avenue Jean Jaures, 69007 Lyon).",
+    "Confirm with the student whether the RIB address is outdated or whether the rental differs from the holder's residence before any submission.",
+    "Form values are taken directly from Facts; no values were invented. Verify the IBAN and BIC against the original RIB.",
+    "Permit is labelled 'Attestation fictive de résidence'; verify the document type is acceptable for the CAF file.",
+    "Submission is mocked and nothing has been sent."
+  ]
+}
