@@ -1,0 +1,209 @@
+{
+  "case_id": "case_a",
+  "documents": [
+    {
+      "doc_id": "lease",
+      "fields": {
+        "tenant_name": {
+          "value": "Camille Durand",
+          "confidence": 0.98,
+          "source": {
+            "page": 1,
+            "quote": "Locataire : Camille Durand"
+          }
+        },
+        "landlord_name": {
+          "value": "Société Civile Exemple",
+          "confidence": 0.98,
+          "source": {
+            "page": 1,
+            "quote": "Bailleur : Société Civile Exemple"
+          }
+        },
+        "property_address": {
+          "value": "12 rue des Lilas 75011 Paris",
+          "confidence": 0.98,
+          "source": {
+            "page": 1,
+            "quote": "Adresse du bien : 12 rue des Lilas 75011 Paris"
+          }
+        },
+        "monthly_rent_eur": {
+          "value": "850.00",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Loyer mensuel : 850 EUR"
+          }
+        },
+        "charges_eur": {
+          "value": "75.00",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Charges : 75 EUR"
+          }
+        },
+        "lease_start": {
+          "value": "2026-09-12",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Prise d'effet : 12/09/2026"
+          }
+        },
+        "lease_end": {
+          "value": "2027-09-11",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Fin du bail : 11 septembre 2027"
+          }
+        }
+      }
+    },
+    {
+      "doc_id": "rib",
+      "fields": {
+        "account_holder": {
+          "value": "Camille Durand",
+          "confidence": 0.98,
+          "source": {
+            "page": 1,
+            "quote": "Titulaire du compte Camille Durand"
+          }
+        },
+        "holder_address": {
+          "value": "48 avenue Jean Jaures 69007 Lyon",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Adresse du titulaire 48 avenue Jean Jaures 69007 Lyon"
+          }
+        },
+        "iban": {
+          "value": "FR0600000123450678901234500",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "IBAN FR0600000123450678901234500"
+          }
+        },
+        "bic": {
+          "value": "FICTFRPPXXX",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "BIC FICTFRPPXXX"
+          }
+        },
+        "bank_name": {
+          "value": "Banque Exemple",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Établissement Banque Exemple"
+          }
+        }
+      }
+    },
+    {
+      "doc_id": "enrollment",
+      "fields": {
+        "student_name": {
+          "value": "Camille Durand",
+          "confidence": 0.98,
+          "source": {
+            "page": 1,
+            "quote": "Nom de l'étudiant(e) Camille Durand"
+          }
+        },
+        "date_of_birth": {
+          "value": "2004-03-08",
+          "confidence": 0.95,
+          "source": {
+            "page": 1,
+            "quote": "Date de naissance 08/03/2004"
+          }
+        },
+        "university": {
+          "value": "Université des Rives (fictive)",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Université des Rives (fictive)"
+          }
+        },
+        "program": {
+          "value": "Licence de lettres",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Formation Licence de lettres"
+          }
+        },
+        "academic_year": {
+          "value": "2026-2027",
+          "confidence": 0.98,
+          "source": {
+            "page": 1,
+            "quote": "Année universitaire 2026-2027"
+          }
+        },
+        "enrollment_status": {
+          "value": "Inscription validée",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Statut d'inscription Inscription validée"
+          }
+        }
+      }
+    },
+    {
+      "doc_id": "permit",
+      "fields": {
+        "holder_name": {
+          "value": "Camille Durand",
+          "confidence": 0.98,
+          "source": {
+            "page": 1,
+            "quote": "Titulaire : Camille Durand"
+          }
+        },
+        "nationality": {
+          "value": "Française",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Nationalité : Française"
+          }
+        },
+        "permit_type": {
+          "value": "Attestation fictive de résidence",
+          "confidence": 0.95,
+          "source": {
+            "page": 1,
+            "quote": "Type de titre : Attestation fictive de résidence"
+          }
+        },
+        "valid_from": {
+          "value": "2026-09-12",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Valide du : 12 septembre 2026"
+          }
+        },
+        "valid_until": {
+          "value": "2027-09-11",
+          "confidence": 0.97,
+          "source": {
+            "page": 1,
+            "quote": "Valide jusqu'au : 11/09/2027"
+          }
+        }
+      }
+    }
+  ]
+}

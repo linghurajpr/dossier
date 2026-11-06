@@ -1,0 +1,114 @@
+{
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "warning",
+      "rule": "address_consistency",
+      "message": "The address on the bank details (RIB) differs from the rented property address on the lease. The holder address is in Lyon, while the property is in Paris 11e. This may be legitimate (tenant lives elsewhere than the rented flat) but needs a human check.",
+      "evidence": [
+        {
+          "doc_id": "lease",
+          "field": "property_address",
+          "value": "12 rue des Lilas 75011 Paris",
+          "quote": "Adresse du bien : 12 rue des Lilas 75011 Paris"
+        },
+        {
+          "doc_id": "rib",
+          "field": "holder_address",
+          "value": "48 avenue Jean Jaures 69007 Lyon",
+          "quote": "Adresse du titulaire 48 avenue Jean Jaures 69007 Lyon"
+        }
+      ],
+      "suggested_action": "Confirm with the student why the bank account address is in Lyon while the lease property is in Paris, and whether a proof of address for the Paris rental is required."
+    },
+    {
+      "id": "F2",
+      "severity": "info",
+      "rule": "name_consistency",
+      "message": "Tenant/student/account-holder/permit-holder name matches across all documents.",
+      "evidence": [
+        {
+          "doc_id": "lease",
+          "field": "tenant_name",
+          "value": "Camille Durand",
+          "quote": "Locataire : Camille Durand"
+        },
+        {
+          "doc_id": "rib",
+          "field": "account_holder",
+          "value": "Camille Durand",
+          "quote": "Titulaire du compte Camille Durand"
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "student_name",
+          "value": "Camille Durand",
+          "quote": "Nom de l'étudiant(e) Camille Durand"
+        },
+        {
+          "doc_id": "permit",
+          "field": "holder_name",
+          "value": "Camille Durand",
+          "quote": "Titulaire : Camille Durand"
+        }
+      ],
+      "suggested_action": "No action required."
+    },
+    {
+      "id": "F3",
+      "severity": "info",
+      "rule": "date_coverage",
+      "message": "Lease period (2026-09-12 to 2027-09-11) is consistent with the permit validity period (2026-09-12 to 2027-09-11) and the academic year 2026-2027.",
+      "evidence": [
+        {
+          "doc_id": "lease",
+          "field": "lease_start",
+          "value": "2026-09-12",
+          "quote": "Prise d'effet : 12/09/2026"
+        },
+        {
+          "doc_id": "lease",
+          "field": "lease_end",
+          "value": "2027-09-11",
+          "quote": "Fin du bail : 11 septembre 2027"
+        },
+        {
+          "doc_id": "permit",
+          "field": "valid_from",
+          "value": "2026-09-12",
+          "quote": "Valide du : 12 septembre 2026"
+        },
+        {
+          "doc_id": "permit",
+          "field": "valid_until",
+          "value": "2027-09-11",
+          "quote": "Valide jusqu'au : 11/09/2027"
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "academic_year",
+          "value": "2026-2027",
+          "quote": "Année universitaire 2026-2027"
+        }
+      ],
+      "suggested_action": "No action required."
+    },
+    {
+      "id": "F4",
+      "severity": "info",
+      "rule": "permit_type",
+      "message": "The permit is described as a fictitious residence attestation ('Attestation fictive de résidence'). Confirm that this document type is acceptable for the housing-aid file.",
+      "evidence": [
+        {
+          "doc_id": "permit",
+          "field": "permit_type",
+          "value": "Attestation fictive de résidence",
+          "quote": "Type de titre : Attestation fictive de résidence"
+        }
+      ],
+      "suggested_action": "Verify that the permit type is accepted; if the document is a test/placeholder, replace it with a valid residence document before submission."
+    }
+  ],
+  "missing_documents": [],
+  "ready_to_submit": false
+}
