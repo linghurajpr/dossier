@@ -82,7 +82,7 @@ Both cases reached `AWAITING_APPROVAL`. The planted `ADDRESS_MISMATCH` was detec
 Requirements: Python 3.12 and a Cominty account with the three configured agents. Agent capabilities must be restricted in the Cominty dashboard as described above.
 
 ```bash
-git clone https://github.com/<YOUR_GITHUB>
+git clone https://github.com/linghurajpr/dossier
 cd dossier
 python3.12 -m venv .venv
 source .venv/bin/activate
