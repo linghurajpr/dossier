@@ -1,0 +1,40 @@
+{
+  "case_id": "case_c",
+  "fields": {
+    "lease": {
+      "tenant_name": "Éloïse Martin",
+      "landlord_name": "Société Civile Exemple",
+      "property_address": "12 rue des Lilas 75011 Paris",
+      "monthly_rent_eur": 850,
+      "charges_eur": 75,
+      "lease_start": "2026-09-12",
+      "lease_end": "2027-09-11"
+    },
+    "rib": {
+      "account_holder": "ELOISE MARTIN",
+      "holder_address": "12 rue des Lilas 75011 Paris",
+      "iban": "FR5400000543210098765432100",
+      "bic": "FICTFRPPXXX",
+      "bank_name": "Banque Exemple"
+    },
+    "enrollment": {
+      "student_name": "Éloïse Martin",
+      "date_of_birth": "2004-03-08",
+      "university": "Université des Rives (fictive)",
+      "program": "Licence de lettres",
+      "academic_year": "2026-2027",
+      "enrollment_status": "Inscription validée"
+    },
+    "permit": {
+      "holder_name": "Éloïse Martin",
+      "nationality": "Française",
+      "permit_type": "Attestation fictive de résidence",
+      "valid_from": "2026-09-12",
+      "valid_until": "2027-09-11"
+    }
+  },
+  "expected_findings": [],
+  "must_not_flag": [
+    "NAME_MISMATCH"
+  ]
+}

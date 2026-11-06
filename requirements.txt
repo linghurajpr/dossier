@@ -1,0 +1,13 @@
+cominty-sdk>=1.2.0
+fastapi
+uvicorn[standard]
+pydantic>=2
+pydantic-settings
+aiosqlite
+python-multipart
+reportlab
+Pillow
+faker
+pytest
+pytest-asyncio
+httpx

@@ -1,0 +1,43 @@
+{
+  "case_id": "case_a",
+  "fields": {
+    "lease": {
+      "tenant_name": "Camille Durand",
+      "landlord_name": "Société Civile Exemple",
+      "property_address": "12 rue des Lilas 75011 Paris",
+      "monthly_rent_eur": 850,
+      "charges_eur": 75,
+      "lease_start": "2026-09-12",
+      "lease_end": "2027-09-11"
+    },
+    "rib": {
+      "account_holder": "Camille Durand",
+      "holder_address": "48 avenue Jean Jaures 69007 Lyon",
+      "iban": "FR0600000123450678901234500",
+      "bic": "FICTFRPPXXX",
+      "bank_name": "Banque Exemple"
+    },
+    "enrollment": {
+      "student_name": "Camille Durand",
+      "date_of_birth": "2004-03-08",
+      "university": "Université des Rives (fictive)",
+      "program": "Licence de lettres",
+      "academic_year": "2026-2027",
+      "enrollment_status": "Inscription validée"
+    },
+    "permit": {
+      "holder_name": "Camille Durand",
+      "nationality": "Française",
+      "permit_type": "Attestation fictive de résidence",
+      "valid_from": "2026-09-12",
+      "valid_until": "2027-09-11"
+    }
+  },
+  "expected_findings": [
+    {
+      "rule": "ADDRESS_MISMATCH",
+      "severity": "error"
+    }
+  ],
+  "must_not_flag": []
+}
