@@ -272,6 +272,476 @@
       "runs": 3,
       "usage": null,
       "created_at": "2026-11-06T22:20:37.428161+00:00"
+    },
+    "2543c7ae-79c0-4a09-8101-3832ded0a2c2": {
+      "case_id": "2543c7ae-79c0-4a09-8101-3832ded0a2c2",
+      "demo_case_id": "case_a",
+      "state": "AWAITING_APPROVAL",
+      "facts": {
+        "case_id": "case_a",
+        "documents": [
+          {
+            "doc_id": "lease",
+            "fields": {
+              "tenant_name": {
+                "value": "Camille Durand",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Locataire : Camille Durand"
+                }
+              },
+              "landlord_name": {
+                "value": "Société Civile Exemple",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Bailleur : Société Civile Exemple"
+                }
+              },
+              "property_address": {
+                "value": "12 rue des Lilas 75011 Paris",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Adresse du bien : 12 rue des Lilas 75011 Paris"
+                }
+              },
+              "monthly_rent_eur": {
+                "value": "850.00",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Loyer mensuel : 850 EUR"
+                }
+              },
+              "charges_eur": {
+                "value": "75.00",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Charges : 75 EUR"
+                }
+              },
+              "lease_start": {
+                "value": "2026-09-12",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Prise d'effet : 12/09/2026"
+                }
+              },
+              "lease_end": {
+                "value": "2027-09-11",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Fin du bail : 11 septembre 2027"
+                }
+              }
+            }
+          },
+          {
+            "doc_id": "rib",
+            "fields": {
+              "account_holder": {
+                "value": "Camille Durand",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Titulaire du compte Camille Durand"
+                }
+              },
+              "holder_address": {
+                "value": "48 avenue Jean Jaures 69007 Lyon",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Adresse du titulaire 48 avenue Jean Jaures 69007 Lyon"
+                }
+              },
+              "iban": {
+                "value": "FR0600000123450678901234500",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "IBAN FR0600000123450678901234500"
+                }
+              },
+              "bic": {
+                "value": "FICTFRPPXXX",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "BIC FICTFRPPXXX"
+                }
+              },
+              "bank_name": {
+                "value": "Banque Exemple",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Établissement Banque Exemple"
+                }
+              }
+            }
+          },
+          {
+            "doc_id": "enrollment",
+            "fields": {
+              "student_name": {
+                "value": "Camille Durand",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Nom de l'étudiant(e) Camille Durand"
+                }
+              },
+              "date_of_birth": {
+                "value": "2004-03-08",
+                "confidence": 0.9,
+                "source": {
+                  "page": 1,
+                  "quote": "Date de naissance 08/03/2004"
+                }
+              },
+              "university": {
+                "value": "Université des Rives (fictive)",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Université des Rives (fictive)"
+                }
+              },
+              "program": {
+                "value": "Licence de lettres",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Formation Licence de lettres"
+                }
+              },
+              "academic_year": {
+                "value": "2026-2027",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Année universitaire 2026-2027"
+                }
+              },
+              "enrollment_status": {
+                "value": "Inscription validée",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Statut d'inscription Inscription validée"
+                }
+              }
+            }
+          },
+          {
+            "doc_id": "permit",
+            "fields": {
+              "holder_name": {
+                "value": "Camille Durand",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Titulaire : Camille Durand"
+                }
+              },
+              "nationality": {
+                "value": "Française",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Nationalité : Française"
+                }
+              },
+              "permit_type": {
+                "value": "Attestation fictive de résidence",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Type de titre : Attestation fictive de résidence"
+                }
+              },
+              "valid_from": {
+                "value": "2026-09-12",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Valide du : 12 septembre 2026"
+                }
+              },
+              "valid_until": {
+                "value": "2027-09-11",
+                "confidence": 0.9,
+                "source": {
+                  "page": 1,
+                  "quote": "Valide jusqu'au : 11/09/2027"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "findings": {
+        "findings": [
+          {
+            "id": "F1",
+            "severity": "error",
+            "rule": "ADDRESS_MISMATCH",
+            "message": "The lease property address (12 rue des Lilas 75011 Paris) and the RIB holder address (48 avenue Jean Jaures 69007 Lyon) differ in number, street, postal code and city.",
+            "evidence": [
+              {
+                "doc_id": "lease",
+                "field": "property_address",
+                "value": "12 rue des Lilas 75011 Paris",
+                "quote": "Adresse du bien : 12 rue des Lilas 75011 Paris"
+              },
+              {
+                "doc_id": "rib",
+                "field": "holder_address",
+                "value": "48 avenue Jean Jaures 69007 Lyon",
+                "quote": "Adresse du titulaire 48 avenue Jean Jaures 69007 Lyon"
+              }
+            ],
+            "suggested_action": "Confirm with the student whether the difference is innocent (e.g., the bank holds an address in Lyon while the student rents in Paris) and, if needed, provide a proof of address matching the leased property."
+          }
+        ],
+        "missing_documents": [],
+        "ready_to_submit": false
+      },
+      "artifacts": null,
+      "error": null,
+      "runs": 0,
+      "usage": null,
+      "created_at": "2026-11-06T22:36:14.280767+00:00"
+    },
+    "92519496-4ff4-4c31-932d-59564f9c8705": {
+      "case_id": "92519496-4ff4-4c31-932d-59564f9c8705",
+      "demo_case_id": "case_c",
+      "state": "AWAITING_APPROVAL",
+      "facts": {
+        "case_id": "case_c",
+        "documents": [
+          {
+            "doc_id": "lease",
+            "fields": {
+              "tenant_name": {
+                "value": "Éloïse Martin",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Locataire : Éloïse Martin"
+                }
+              },
+              "landlord_name": {
+                "value": "Société Civile Exemple",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Bailleur : Société Civile Exemple"
+                }
+              },
+              "property_address": {
+                "value": "12 rue des Lilas 75011 Paris",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Adresse du bien : 12 rue des Lilas 75011 Paris"
+                }
+              },
+              "monthly_rent_eur": {
+                "value": "850.00",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Loyer mensuel : 850 EUR"
+                }
+              },
+              "charges_eur": {
+                "value": "75.00",
+                "confidence": 0.96,
+                "source": {
+                  "page": 1,
+                  "quote": "Charges : 75 EUR"
+                }
+              },
+              "lease_start": {
+                "value": "2026-09-12",
+                "confidence": 0.93,
+                "source": {
+                  "page": 1,
+                  "quote": "Prise d'effet : 12/09/2026"
+                }
+              },
+              "lease_end": {
+                "value": "2027-09-11",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Fin du bail : 11 septembre 2027"
+                }
+              }
+            }
+          },
+          {
+            "doc_id": "rib",
+            "fields": {
+              "account_holder": {
+                "value": "ELOISE MARTIN",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Titulaire du compte ELOISE MARTIN"
+                }
+              },
+              "holder_address": {
+                "value": "12 rue des Lilas 75011 Paris",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Adresse du titulaire 12 rue des Lilas 75011 Paris"
+                }
+              },
+              "iban": {
+                "value": "FR5400000543210098765432100",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "IBAN FR5400000543210098765432100"
+                }
+              },
+              "bic": {
+                "value": "FICTFRPPXXX",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "BIC FICTFRPPXXX"
+                }
+              },
+              "bank_name": {
+                "value": "Banque Exemple",
+                "confidence": 0.96,
+                "source": {
+                  "page": 1,
+                  "quote": "Établissement Banque Exemple"
+                }
+              }
+            }
+          },
+          {
+            "doc_id": "enrollment",
+            "fields": {
+              "student_name": {
+                "value": "Éloïse Martin",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Nom de l'étudiant(e) Éloïse Martin"
+                }
+              },
+              "date_of_birth": {
+                "value": "2004-03-08",
+                "confidence": 0.9,
+                "source": {
+                  "page": 1,
+                  "quote": "Date de naissance 08/03/2004"
+                }
+              },
+              "university": {
+                "value": "Université des Rives (fictive)",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Université des Rives (fictive)"
+                }
+              },
+              "program": {
+                "value": "Licence de lettres",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Formation Licence de lettres"
+                }
+              },
+              "academic_year": {
+                "value": "2026-2027",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Année universitaire 2026-2027"
+                }
+              },
+              "enrollment_status": {
+                "value": "Inscription validée",
+                "confidence": 0.96,
+                "source": {
+                  "page": 1,
+                  "quote": "Statut d'inscription Inscription validée"
+                }
+              }
+            }
+          },
+          {
+            "doc_id": "permit",
+            "fields": {
+              "holder_name": {
+                "value": "Éloïse Martin",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Titulaire : Éloïse Martin"
+                }
+              },
+              "nationality": {
+                "value": "Française",
+                "confidence": 0.97,
+                "source": {
+                  "page": 1,
+                  "quote": "Nationalité : Française"
+                }
+              },
+              "permit_type": {
+                "value": "Attestation fictive de résidence",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Type de titre : Attestation fictive de résidence"
+                }
+              },
+              "valid_from": {
+                "value": "2026-09-12",
+                "confidence": 0.95,
+                "source": {
+                  "page": 1,
+                  "quote": "Valide du : 12 septembre 2026"
+                }
+              },
+              "valid_until": {
+                "value": "2027-09-11",
+                "confidence": 0.93,
+                "source": {
+                  "page": 1,
+                  "quote": "Valide jusqu'au : 11/09/2027"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "findings": {
+        "findings": [],
+        "missing_documents": [],
+        "ready_to_submit": true
+      },
+      "artifacts": null,
+      "error": null,
+      "runs": 2,
+      "usage": null,
+      "created_at": "2026-11-06T22:36:14.388746+00:00"
     }
   },
   "audit": [
@@ -356,7 +826,99 @@
       "case_id": "fc78a62a-bbd4-4cd5-a71d-0e34acc9607c",
       "from_state": "ACTION_RUNNING",
       "to_state": "DONE"
+    },
+    {
+      "timestamp": "2026-11-06T22:36:14.281798+00:00",
+      "type": "case_created",
+      "case_id": "2543c7ae-79c0-4a09-8101-3832ded0a2c2",
+      "demo_case_id": "case_a"
+    },
+    {
+      "timestamp": "2026-11-06T22:36:14.282218+00:00",
+      "type": "transition",
+      "case_id": "2543c7ae-79c0-4a09-8101-3832ded0a2c2",
+      "from_state": "CREATED",
+      "to_state": "INTAKE_RUNNING"
+    },
+    {
+      "timestamp": "2026-11-06T22:36:14.282561+00:00",
+      "type": "cache_hit",
+      "case_id": "2543c7ae-79c0-4a09-8101-3832ded0a2c2",
+      "agent_id": "2J_pdcHQsD2k",
+      "input_hash": "d598c250bdf45252dba705a22d1968cb61a72dadd09c3c736522c431f3408928"
+    },
+    {
+      "timestamp": "2026-11-06T22:36:14.284366+00:00",
+      "type": "transition",
+      "case_id": "2543c7ae-79c0-4a09-8101-3832ded0a2c2",
+      "from_state": "INTAKE_RUNNING",
+      "to_state": "VERIFY_RUNNING"
+    },
+    {
+      "timestamp": "2026-11-06T22:36:14.284799+00:00",
+      "type": "cache_hit",
+      "case_id": "2543c7ae-79c0-4a09-8101-3832ded0a2c2",
+      "agent_id": "7UnlF5GadMVx",
+      "input_hash": "210477f9979653c4518667e656786381ca23f0a9d03b6c0341a79ee34bc10007"
+    },
+    {
+      "timestamp": "2026-11-06T22:36:14.285538+00:00",
+      "type": "transition",
+      "case_id": "2543c7ae-79c0-4a09-8101-3832ded0a2c2",
+      "from_state": "VERIFY_RUNNING",
+      "to_state": "AWAITING_APPROVAL"
+    },
+    {
+      "timestamp": "2026-11-06T22:36:14.389565+00:00",
+      "type": "case_created",
+      "case_id": "92519496-4ff4-4c31-932d-59564f9c8705",
+      "demo_case_id": "case_c"
+    },
+    {
+      "timestamp": "2026-11-06T22:36:14.390346+00:00",
+      "type": "transition",
+      "case_id": "92519496-4ff4-4c31-932d-59564f9c8705",
+      "from_state": "CREATED",
+      "to_state": "INTAKE_RUNNING"
+    },
+    {
+      "timestamp": "2026-11-06T22:36:35.611164+00:00",
+      "type": "agent_call",
+      "case_id": "92519496-4ff4-4c31-932d-59564f9c8705",
+      "agent_id": "2J_pdcHQsD2k",
+      "input_hash": "9444464ebb089214a9ab3d2ace4c1f882cb3073d59d56b570c910d6502dae8ea",
+      "output_hash": "875f97080122c901436ad9c6d5345fe8b391c86ef6948d0dc05c399b38221311",
+      "latency_s": 21.22,
+      "runs": 1,
+      "success": true,
+      "error_type": null
+    },
+    {
+      "timestamp": "2026-11-06T22:36:35.618048+00:00",
+      "type": "transition",
+      "case_id": "92519496-4ff4-4c31-932d-59564f9c8705",
+      "from_state": "INTAKE_RUNNING",
+      "to_state": "VERIFY_RUNNING"
+    },
+    {
+      "timestamp": "2026-11-06T22:36:37.961258+00:00",
+      "type": "agent_call",
+      "case_id": "92519496-4ff4-4c31-932d-59564f9c8705",
+      "agent_id": "7UnlF5GadMVx",
+      "input_hash": "3e0f63a3bc797ae4da8f7bed75a7ea7708fc2601fc2f87a1b86ba07ac377c772",
+      "output_hash": "ef572f4f9836f0d42a925b4806969395deeda3396d26315ca8e6879bb545ade3",
+      "latency_s": 2.3378,
+      "runs": 1,
+      "success": true,
+      "error_type": null
+    },
+    {
+      "timestamp": "2026-11-06T22:36:37.966964+00:00",
+      "type": "transition",
+      "case_id": "92519496-4ff4-4c31-932d-59564f9c8705",
+      "from_state": "VERIFY_RUNNING",
+      "to_state": "AWAITING_APPROVAL"
     }
   ],
-  "runs_used": 3
+  "runs_used": 5
 }

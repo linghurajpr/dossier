@@ -1,0 +1,366 @@
+{
+  "status": "done",
+  "created_at": "2026-11-06T23:36:38.055391+01:00",
+  "n_cases": 2,
+  "disclaimer": "Small evaluation on synthetic data; indicative only.",
+  "variants": [
+    {
+      "variant": "default",
+      "model_label": "(see Cominty dashboard)",
+      "field_accuracy": 1.0,
+      "recall": 1.0,
+      "false_positives": 0,
+      "runs": 2,
+      "avg_latency_s": 11.885032854508609,
+      "cost_per_dossier_eur": null,
+      "cost_note": "read from Cominty usage dashboard"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "case_a",
+      "status": "AWAITING_APPROVAL",
+      "field_results": [
+        {
+          "doc_id": "lease",
+          "field": "tenant_name",
+          "expected": "Camille Durand",
+          "got": "Camille Durand",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "landlord_name",
+          "expected": "Société Civile Exemple",
+          "got": "Société Civile Exemple",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "property_address",
+          "expected": "12 rue des Lilas 75011 Paris",
+          "got": "12 rue des Lilas 75011 Paris",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "monthly_rent_eur",
+          "expected": 850,
+          "got": "850.00",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "charges_eur",
+          "expected": 75,
+          "got": "75.00",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "lease_start",
+          "expected": "2026-09-12",
+          "got": "2026-09-12",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "lease_end",
+          "expected": "2027-09-11",
+          "got": "2027-09-11",
+          "correct": true
+        },
+        {
+          "doc_id": "rib",
+          "field": "account_holder",
+          "expected": "Camille Durand",
+          "got": "Camille Durand",
+          "correct": true
+        },
+        {
+          "doc_id": "rib",
+          "field": "holder_address",
+          "expected": "48 avenue Jean Jaures 69007 Lyon",
+          "got": "48 avenue Jean Jaures 69007 Lyon",
+          "correct": true
+        },
+        {
+          "doc_id": "rib",
+          "field": "iban",
+          "expected": "FR0600000123450678901234500",
+          "got": "FR0600000123450678901234500",
+          "correct": true
+        },
+        {
+          "doc_id": "rib",
+          "field": "bic",
+          "expected": "FICTFRPPXXX",
+          "got": "FICTFRPPXXX",
+          "correct": true
+        },
+        {
+          "doc_id": "rib",
+          "field": "bank_name",
+          "expected": "Banque Exemple",
+          "got": "Banque Exemple",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "student_name",
+          "expected": "Camille Durand",
+          "got": "Camille Durand",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "date_of_birth",
+          "expected": "2004-03-08",
+          "got": "2004-03-08",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "university",
+          "expected": "Université des Rives (fictive)",
+          "got": "Université des Rives (fictive)",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "program",
+          "expected": "Licence de lettres",
+          "got": "Licence de lettres",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "academic_year",
+          "expected": "2026-2027",
+          "got": "2026-2027",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "enrollment_status",
+          "expected": "Inscription validée",
+          "got": "Inscription validée",
+          "correct": true
+        },
+        {
+          "doc_id": "permit",
+          "field": "holder_name",
+          "expected": "Camille Durand",
+          "got": "Camille Durand",
+          "correct": true
+        },
+        {
+          "doc_id": "permit",
+          "field": "nationality",
+          "expected": "Française",
+          "got": "Française",
+          "correct": true
+        },
+        {
+          "doc_id": "permit",
+          "field": "permit_type",
+          "expected": "Attestation fictive de résidence",
+          "got": "Attestation fictive de résidence",
+          "correct": true
+        },
+        {
+          "doc_id": "permit",
+          "field": "valid_from",
+          "expected": "2026-09-12",
+          "got": "2026-09-12",
+          "correct": true
+        },
+        {
+          "doc_id": "permit",
+          "field": "valid_until",
+          "expected": "2027-09-11",
+          "got": "2027-09-11",
+          "correct": true
+        }
+      ],
+      "findings_expected": [
+        {
+          "rule": "ADDRESS_MISMATCH",
+          "severity": "error"
+        }
+      ],
+      "findings_got": [
+        "ADDRESS_MISMATCH"
+      ]
+    },
+    {
+      "case_id": "case_c",
+      "status": "AWAITING_APPROVAL",
+      "field_results": [
+        {
+          "doc_id": "lease",
+          "field": "tenant_name",
+          "expected": "Éloïse Martin",
+          "got": "Éloïse Martin",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "landlord_name",
+          "expected": "Société Civile Exemple",
+          "got": "Société Civile Exemple",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "property_address",
+          "expected": "12 rue des Lilas 75011 Paris",
+          "got": "12 rue des Lilas 75011 Paris",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "monthly_rent_eur",
+          "expected": 850,
+          "got": "850.00",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "charges_eur",
+          "expected": 75,
+          "got": "75.00",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "lease_start",
+          "expected": "2026-09-12",
+          "got": "2026-09-12",
+          "correct": true
+        },
+        {
+          "doc_id": "lease",
+          "field": "lease_end",
+          "expected": "2027-09-11",
+          "got": "2027-09-11",
+          "correct": true
+        },
+        {
+          "doc_id": "rib",
+          "field": "account_holder",
+          "expected": "ELOISE MARTIN",
+          "got": "ELOISE MARTIN",
+          "correct": true
+        },
+        {
+          "doc_id": "rib",
+          "field": "holder_address",
+          "expected": "12 rue des Lilas 75011 Paris",
+          "got": "12 rue des Lilas 75011 Paris",
+          "correct": true
+        },
+        {
+          "doc_id": "rib",
+          "field": "iban",
+          "expected": "FR5400000543210098765432100",
+          "got": "FR5400000543210098765432100",
+          "correct": true
+        },
+        {
+          "doc_id": "rib",
+          "field": "bic",
+          "expected": "FICTFRPPXXX",
+          "got": "FICTFRPPXXX",
+          "correct": true
+        },
+        {
+          "doc_id": "rib",
+          "field": "bank_name",
+          "expected": "Banque Exemple",
+          "got": "Banque Exemple",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "student_name",
+          "expected": "Éloïse Martin",
+          "got": "Éloïse Martin",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "date_of_birth",
+          "expected": "2004-03-08",
+          "got": "2004-03-08",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "university",
+          "expected": "Université des Rives (fictive)",
+          "got": "Université des Rives (fictive)",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "program",
+          "expected": "Licence de lettres",
+          "got": "Licence de lettres",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "academic_year",
+          "expected": "2026-2027",
+          "got": "2026-2027",
+          "correct": true
+        },
+        {
+          "doc_id": "enrollment",
+          "field": "enrollment_status",
+          "expected": "Inscription validée",
+          "got": "Inscription validée",
+          "correct": true
+        },
+        {
+          "doc_id": "permit",
+          "field": "holder_name",
+          "expected": "Éloïse Martin",
+          "got": "Éloïse Martin",
+          "correct": true
+        },
+        {
+          "doc_id": "permit",
+          "field": "nationality",
+          "expected": "Française",
+          "got": "Française",
+          "correct": true
+        },
+        {
+          "doc_id": "permit",
+          "field": "permit_type",
+          "expected": "Attestation fictive de résidence",
+          "got": "Attestation fictive de résidence",
+          "correct": true
+        },
+        {
+          "doc_id": "permit",
+          "field": "valid_from",
+          "expected": "2026-09-12",
+          "got": "2026-09-12",
+          "correct": true
+        },
+        {
+          "doc_id": "permit",
+          "field": "valid_until",
+          "expected": "2027-09-11",
+          "got": "2027-09-11",
+          "correct": true
+        }
+      ],
+      "findings_expected": [],
+      "findings_got": []
+    }
+  ]
+}
