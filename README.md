@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="<DEMO_URL>"><img alt="Demo" src="https://img.shields.io/badge/demo-open-6366F1?style=for-the-badge"></a>
-  <a href="<VIDEO_URL>"><img alt="Video" src="https://img.shields.io/badge/video-watch-22D3EE?style=for-the-badge"></a>
+  <a href="https://drive.google.com/file/d/1XyqjdbTKZGiA77hJ5tzaaDJgmaMIlPns/view?usp=sharing"><img alt="Video" src="https://img.shields.io/badge/video-watch-22D3EE?style=for-the-badge"></a>
   <a href="https://github.com/linghurajpr/dossier/"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-source-121A33?style=for-the-badge&logo=github"></a>
   <img alt="Python 3.12" src="https://img.shields.io/badge/python-3.12-10B981?style=for-the-badge">
   <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-async-6366F1?style=for-the-badge">
